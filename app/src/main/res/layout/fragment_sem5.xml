@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragments.Sem5Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sem5 textbooks"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textAllCaps="false"/>
+
+        <GridLayout
+            android:backgroundTint="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:layout_weight="1"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="20dp"
+            android:padding="30dp"
+            android:rowCount="3">
+
+            <Button
+                android:id="@+id/s5sub1"
+                style="@style/buttonstyle"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/icon_ai"
+                android:text= "artificial intelligence"/>
+
+            <Button
+
+                android:id="@+id/s5sub2"
+                style="@style/buttonstyle"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:drawableTop="@drawable/icon_server"
+                android:text="linux server "
+
+                />
+
+            <Button
+                android:id="@+id/s5sub3"
+                style="@style/buttonstyle"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:drawableTop="@drawable/icon_softwaretest"
+                android:text="software testing "
+
+                />
+
+            <Button
+                android:id="@+id/s5sub4"
+                style="@style/buttonstyle"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:drawableTop="@drawable/icon_networksecurity"
+                android:text="network security"
+                android:textSize="11sp"
+
+                />
+
+            <Button
+                android:id="@+id/s5sub5"
+                style="@style/buttonstyle"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:drawableTop="@drawable/icon_architec"
+                android:text="architecture of iot"
+
+                />
+
+            <Button
+                android:id="@+id/s5sub6"
+                style="@style/buttonstyle"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:drawableTop="@drawable/icon_webservice1"
+                android:text="web service"
+
+                />
+
+
+        </GridLayout>
+        <Button
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:text="game programming"
+            android:id="@+id/s5sub7"
+            android:drawableTop="@drawable/icon_game"
+            style="@style/buttonstyle"/>
+
+    </LinearLayout>
+
+</FrameLayout>
